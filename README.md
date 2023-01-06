@@ -1,4 +1,5 @@
 # Microchip-PIC18F45K50
+<img src="PIC18F45K50-S2X-Regular.jpg"><br>
 Repositorio de ejemplos con el microcontrolador PIC18F45K50
 
 Links software:
