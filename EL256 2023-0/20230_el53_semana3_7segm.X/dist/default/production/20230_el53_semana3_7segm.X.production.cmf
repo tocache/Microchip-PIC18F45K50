@@ -1,0 +1,399 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/maincode2.o
+principal CODE 0 0 0 2055 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 2055-7FFF 1
+IDLOC 200000-200007 1
+SMALLCONST 2055-7FFF 1
+CODE 2055-7FFF 1
+COMRAM 0-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2055-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/maincode2.o
+0 principal CODE >10:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+0 principal CODE >11:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+2 principal CODE >12:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+8 principal CODE >13:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+A principal CODE >15:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+20 principal CODE >24:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+22 principal CODE >25:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+24 principal CODE >26:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+26 principal CODE >27:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+28 principal CODE >28:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+2A principal CODE >29:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+2C principal CODE >30:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+2E principal CODE >31:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+30 principal CODE >32:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+32 principal CODE >33:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+34 principal CODE >34:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+36 principal CODE >35:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+38 principal CODE >36:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+3A principal CODE >37:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+3C principal CODE >38:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+3E principal CODE >39:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+40 principal CODE >40:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+42 principal CODE >41:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+44 principal CODE >42:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+46 principal CODE >43:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+48 principal CODE >44:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+4A principal CODE >48:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+4C principal CODE >49:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+4E principal CODE >50:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+50 principal CODE >52:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+54 principal CODE >53:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+56 principal CODE >56:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+58 principal CODE >57:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+5A principal CODE >58:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+5C principal CODE >61:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+5E principal CODE >62:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+60 principal CODE >63:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+62 principal CODE >64:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+64 principal CODE >66:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+66 principal CODE >67:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+68 principal CODE >68:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+6A principal CODE >69:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+6C principal CODE >72:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+6E principal CODE >73:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+72 principal CODE >74:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+74 principal CODE >78:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+78 principal CODE >79:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+7A principal CODE >80:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+7C principal CODE >81:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+80 principal CODE >82:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+82 principal CODE >83:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+84 principal CODE >84:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+86 principal CODE >85:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+88 principal CODE >86:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+8A principal CODE >88:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+8C principal CODE >89:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+8E principal CODE >90:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+90 principal CODE >91:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+92 principal CODE >92:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+94 principal CODE >93:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+96 principal CODE >94:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+9A principal CODE >95:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+9C principal CODE >97:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+9E principal CODE >99:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+A0 principal CODE >100:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+A4 principal CODE >101:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+A6 principal CODE >103:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+A8 principal CODE >104:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+AA principal CODE >105:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+AE principal CODE >106:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+B0 principal CODE >107:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+B2 principal CODE >108:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+B4 principal CODE >109:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+B6 principal CODE >110:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+B8 principal CODE >111:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+BA principal CODE >113:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+BC principal CODE >114:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+BE principal CODE >115:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+C0 principal CODE >116:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+C2 principal CODE >117:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+C4 principal CODE >118:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+C6 principal CODE >119:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+CA principal CODE >120:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+CC principal CODE >122:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+CE principal CODE >124:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+D0 principal CODE >125:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+D4 principal CODE >126:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+D6 principal CODE >128:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+D8 principal CODE >129:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+DA principal CODE >130:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+DE principal CODE >131:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+E0 principal CODE >132:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+E2 principal CODE >133:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+E4 principal CODE >134:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+E6 principal CODE >135:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+E8 principal CODE >136:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+EA principal CODE >137:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+EC principal CODE >139:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+EE principal CODE >140:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+F0 principal CODE >141:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+F2 principal CODE >142:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+F4 principal CODE >143:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+F6 principal CODE >144:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+F8 principal CODE >145:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+FC principal CODE >146:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+FE principal CODE >148:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+100 principal CODE >150:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+102 principal CODE >151:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+106 principal CODE >152:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+108 principal CODE >154:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+10A principal CODE >155:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+10C principal CODE >156:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+110 principal CODE >157:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+112 principal CODE >158:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+114 principal CODE >159:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+116 principal CODE >160:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+118 principal CODE >161:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+11A principal CODE >162:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+11C principal CODE >163:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+11E principal CODE >164:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+120 principal CODE >166:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+122 principal CODE >167:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+124 principal CODE >168:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+126 principal CODE >169:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+128 principal CODE >170:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+12A principal CODE >171:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+12C principal CODE >172:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+130 principal CODE >173:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+132 principal CODE >175:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+134 principal CODE >177:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+136 principal CODE >178:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+13A principal CODE >179:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+13C principal CODE >181:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+13E principal CODE >182:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+140 principal CODE >183:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+144 principal CODE >184:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+146 principal CODE >185:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+148 principal CODE >186:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+14A principal CODE >187:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+14C principal CODE >188:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+14E principal CODE >189:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+150 principal CODE >190:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+152 principal CODE >191:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+154 principal CODE >192:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+156 principal CODE >194:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+158 principal CODE >195:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+15A principal CODE >196:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+15C principal CODE >197:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+15E principal CODE >198:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+160 principal CODE >199:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+162 principal CODE >200:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+166 principal CODE >201:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+168 principal CODE >203:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+16A principal CODE >205:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+16C principal CODE >206:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+170 principal CODE >207:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+172 principal CODE >209:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+174 principal CODE >210:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+176 principal CODE >211:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+17A principal CODE >212:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+17C principal CODE >213:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+17E principal CODE >214:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+180 principal CODE >215:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+182 principal CODE >216:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+184 principal CODE >217:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+186 principal CODE >218:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+188 principal CODE >219:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+18A principal CODE >220:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+18C principal CODE >221:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+18E principal CODE >223:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+190 principal CODE >224:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+192 principal CODE >225:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+194 principal CODE >226:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+196 principal CODE >227:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+198 principal CODE >228:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+19A principal CODE >229:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+19E principal CODE >230:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1A0 principal CODE >232:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1A2 principal CODE >234:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1A4 principal CODE >235:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1A8 principal CODE >236:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1AA principal CODE >238:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1AC principal CODE >239:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1AE principal CODE >240:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1B2 principal CODE >241:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1B4 principal CODE >242:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1B6 principal CODE >243:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1B8 principal CODE >244:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1BA principal CODE >245:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1BC principal CODE >246:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1BE principal CODE >247:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1C0 principal CODE >248:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1C2 principal CODE >249:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1C4 principal CODE >250:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1C6 principal CODE >251:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1C8 principal CODE >253:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1CA principal CODE >254:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1CC principal CODE >255:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1CE principal CODE >256:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1D0 principal CODE >257:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1D2 principal CODE >258:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1D4 principal CODE >259:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1D8 principal CODE >260:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1DA principal CODE >262:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1DC principal CODE >264:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1DE principal CODE >265:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1E2 principal CODE >266:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1E4 principal CODE >268:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1E6 principal CODE >269:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1E8 principal CODE >270:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1EC principal CODE >271:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1EE principal CODE >272:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1F0 principal CODE >273:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1F2 principal CODE >274:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1F4 principal CODE >275:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1F6 principal CODE >276:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1F8 principal CODE >277:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1FA principal CODE >278:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1FC principal CODE >279:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1FE principal CODE >280:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+200 principal CODE >281:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+202 principal CODE >282:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+204 principal CODE >284:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+206 principal CODE >285:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+208 principal CODE >286:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+20A principal CODE >287:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+20C principal CODE >288:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+20E principal CODE >289:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+210 principal CODE >290:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+214 principal CODE >291:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+216 principal CODE >293:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+218 principal CODE >295:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+21A principal CODE >296:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+21E principal CODE >297:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+220 principal CODE >300:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+222 principal CODE >303:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+224 principal CODE >304:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+226 principal CODE >305:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+228 principal CODE >306:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+22A principal CODE >307:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+22C principal CODE >308:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+22E principal CODE >309:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+230 principal CODE >310:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+232 principal CODE >311:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+234 principal CODE >312:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+236 principal CODE >313:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+238 principal CODE >314:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+23A principal CODE >315:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+23C principal CODE >319:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+23E principal CODE >320:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+240 principal CODE >321:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+242 principal CODE >322:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+246 principal CODE >323:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+248 principal CODE >324:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+24A principal CODE >326:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+24C principal CODE >327:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+1000 principal CODE >17:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+101A principal CODE >19:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+2000 principal CODE >20:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+2055 principal CODE >22:E:\Micro_202300\20230_el53_semana3_7segm.X\maincode2.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 2055 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000E 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+isa$xinst 0 0 ABS 0 - build/default/production/maincode2.o
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000E 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/maincode2.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Hprincipal 0 0 ABS 0 principal -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Lprincipal 0 0 ABS 0 principal -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
