@@ -1,4 +1,4 @@
-# 1 "maincode2.c"
+# 1 "maincode.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "maincode2.c" 2
+# 1 "maincode.c" 2
 # 1 "./cabecera.h" 1
 
 
@@ -8173,7 +8173,7 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 2 3
 # 74 "./cabecera.h" 2
-# 1 "maincode2.c" 2
+# 1 "maincode.c" 2
 
 # 1 "./LCD.h" 1
 
@@ -8196,26 +8196,24 @@ void LEER_LCD(void);
 void BLINK_CURSOR(unsigned char val);
 void GENERACARACTER(const unsigned char *vector,unsigned char pos);
 void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
-# 2 "maincode2.c" 2
+# 2 "maincode.c" 2
 
 
 
 unsigned char centenas = 0;
 unsigned char decenas = 0;
 unsigned char unidades = 0;
+unsigned char horas = 14, minutos = 16, segundos = 0, ticks = 0;
 
 void configuro(void){
     OSCCON = 0x52;
-    TRISAbits.RA0 = 1;
-    ANSELAbits.ANSA0 = 1;
-    TRISAbits.RA1 = 1;
-    ANSELAbits.ANSA1 = 1;
-    TRISAbits.RA3 = 1;
-    ANSELAbits.ANSA3 = 1;
-
-    ADCON2 = 0x24;
-    ADCON1 = 0x04;
-    ADCON0 = 0x01;
+    T1CON = 0x01;
+    CCP1CON = 0x0B;
+    CCPR1H = 0x27;
+    CCPR1L = 0x10;
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+    PIE1bits.CCP1IE = 1;
 }
 
 void LCD_Init(void){
@@ -8242,24 +8240,52 @@ void main(void) {
     ESCRIBE_MENSAJE("UPC Verano 2023",15);
     _delay((unsigned long)((2000)*(4000000UL/4000.0)));
     BORRAR_LCD();
+    POS_CURSOR(1,2);
+    ESCRIBE_MENSAJE("Relojito UPC",12);
     while(1){
-        ADCON0 = 0x01;
-        ADCON0bits.GO_DONE = 1;
-        while(ADCON0bits.GO_DONE == 1);
-        convierte((ADRESH>>1));
-        POS_CURSOR(1,0);
-        ESCRIBE_MENSAJE("Canal 0:",8);
-        ENVIA_CHAR(centenas+0x30);
-        ENVIA_CHAR(decenas+0x30);
-        ENVIA_CHAR(unidades+0x30);
-        ADCON0 = 0x05;
-        ADCON0bits.GO_DONE = 1;
-        while(ADCON0bits.GO_DONE == 1);
-        convierte(ADRESH);
-        POS_CURSOR(2,0);
-        ESCRIBE_MENSAJE("Canal 1:",8);
-        ENVIA_CHAR(centenas+0x30);
-        ENVIA_CHAR(decenas+0x30);
-        ENVIA_CHAR(unidades+0x30);
+    POS_CURSOR(2,0);
+    convierte(horas);
+    ENVIA_CHAR(decenas+0x30);
+    ENVIA_CHAR(unidades+0x30);
+    ENVIA_CHAR(':');
+    convierte(minutos);
+    ENVIA_CHAR(decenas+0x30);
+    ENVIA_CHAR(unidades+0x30);
+    ENVIA_CHAR(':');
+    convierte(segundos);
+    ENVIA_CHAR(decenas+0x30);
+    ENVIA_CHAR(unidades+0x30);
+    ENVIA_CHAR(':');
+    convierte(ticks);
+    ENVIA_CHAR(decenas+0x30);
+    ENVIA_CHAR(unidades+0x30);
+    }
+}
+
+void __attribute__((picinterrupt(("")))) CCP1_ISR(void){
+    PIR1bits.CCP1IF = 0;
+    if(ticks == 99){
+        ticks = 0;
+        if(segundos == 59){
+            segundos = 0;
+            if(minutos == 59){
+                minutos = 0;
+                if(horas == 23){
+                    horas = 0;
+                }
+                else{
+                    horas++;
+                }
+            }
+            else{
+                minutos++;
+            }
+        }
+        else{
+            segundos++;
+        }
+    }
+    else{
+        ticks++;
     }
 }

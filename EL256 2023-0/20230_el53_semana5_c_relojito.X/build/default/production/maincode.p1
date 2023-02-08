@@ -2,41 +2,56 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12357 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 12357: extern volatile unsigned char OSCCON __attribute__((address(0xFD3)));
 [v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
-"4638
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 4638:     struct {
-[s S195 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S195 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
-"4648
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 4648:     struct {
-[s S196 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S196 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"4637
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 4637: typedef union {
-[u S194 `S195 1 `S196 1 ]
-[n S194 . . . ]
-"4659
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 4659: extern volatile TRISAbits_t TRISAbits __attribute__((address(0xF92)));
-[v _TRISAbits `VS194 ~T0 @X0 0 e@3986 ]
-"239
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 239:     struct {
-[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S16 . ANSA0 ANSA1 ANSA2 ANSA3 . ANSA5 ]
-"238
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 238: typedef union {
-[u S15 `S16 1 ]
-[n S15 . . ]
-"248
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 248: extern volatile ANSELAbits_t ANSELAbits __attribute__((address(0xF5B)));
-[v _ANSELAbits `VS15 ~T0 @X0 0 e@3931 ]
-"9637
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9637: extern volatile unsigned char ADCON2 __attribute__((address(0xFC0)));
-[v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
-"9708
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9708: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
-[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"9776
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9776: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
-[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
+"11958
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 11958: extern volatile unsigned char T1CON __attribute__((address(0xFCD)));
+[v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
+"9398
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9398: extern volatile unsigned char CCP1CON __attribute__((address(0xFBD)));
+[v _CCP1CON `Vuc ~T0 @X0 0 e@4029 ]
+"9617
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9617: extern volatile unsigned char CCPR1H __attribute__((address(0xFBF)));
+[v _CCPR1H `Vuc ~T0 @X0 0 e@4031 ]
+"9597
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9597: extern volatile unsigned char CCPR1L __attribute__((address(0xFBE)));
+[v _CCPR1L `Vuc ~T0 @X0 0 e@4030 ]
+"13232
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 13232:     struct {
+[s S612 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S612 . IOCIF INT0IF TMR0IF IOCIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"13242
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 13242:     struct {
+[s S613 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S613 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"13252
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 13252:     struct {
+[s S614 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S614 . . GIEL GIEH ]
+"13231
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 13231: typedef union {
+[u S611 `S612 1 `S613 1 `S614 1 ]
+[n S611 . . . . ]
+"13258
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 13258: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS611 ~T0 @X0 0 e@4082 ]
+"6197
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6197:     struct {
+[s S251 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S251 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ACTIE ]
+"6207
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6207:     struct {
+[s S252 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S252 . . SSP1IE TX1IE RC1IE . STIE ]
+"6215
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6215:     struct {
+[s S253 :7 `uc 1 :1 `uc 1 ]
+[n S253 . . PSPIE ]
+"6196
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6196: typedef union {
+[u S250 `S251 1 `S252 1 `S253 1 ]
+[n S250 . . . . ]
+"6220
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6220: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS250 ~T0 @X0 0 e@3997 ]
 "5249
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 5249: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
@@ -63,51 +78,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;./LCD.h: 20: void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
 [v _ESCRIBE_MENSAJE `(v ~T0 @X0 0 ef2`*Cuc`uc ]
-"9782 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9782:     struct {
-[s S435 :1 `uc 1 :1 `uc 1 ]
-[n S435 . . GO_NOT_DONE ]
-"9786
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9786:     struct {
-[s S436 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S436 . ADON GO_nDONE CHS ]
-"9791
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9791:     struct {
-[s S437 :1 `uc 1 :1 `uc 1 ]
-[n S437 . . DONE ]
-"9795
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9795:     struct {
-[s S438 :1 `uc 1 :1 `uc 1 ]
-[n S438 . . GO ]
-"9799
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9799:     struct {
-[s S439 :1 `uc 1 :1 `uc 1 ]
-[n S439 . . NOT_DONE ]
-"9803
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9803:     struct {
-[s S440 :1 `uc 1 :1 `uc 1 ]
-[n S440 . . nDONE ]
-"9807
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9807:     struct {
-[s S441 :1 `uc 1 :1 `uc 1 ]
-[n S441 . . GODONE ]
-"9811
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9811:     struct {
-[s S442 :1 `uc 1 :1 `uc 1 ]
-[n S442 . . GO_DONE ]
-"9781
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9781: typedef union {
-[u S434 `S435 1 `S436 1 `S437 1 `S438 1 `S439 1 `S440 1 `S441 1 `S442 1 ]
-[n S434 . . . . . . . . . ]
-"9816
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9816: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0xFC2)));
-[v _ADCON0bits `VS434 ~T0 @X0 0 e@4034 ]
-"9878
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 9878: extern volatile unsigned char ADRESH __attribute__((address(0xFC4)));
-[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
-"12 ./LCD.h
+"12
 [; ;./LCD.h: 12: void ENVIA_CHAR(unsigned char dato);
 [v _ENVIA_CHAR `(v ~T0 @X0 0 ef1`uc ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"6296 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6296:     struct {
+[s S255 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S255 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ACTIF ]
+"6306
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6306:     struct {
+[s S256 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S256 . . SSP1IF TX1IF RC1IF . STIF ]
+"6314
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6314:     struct {
+[s S257 :7 `uc 1 :1 `uc 1 ]
+[n S257 . . PSPIF ]
+"6295
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6295: typedef union {
+[u S254 `S255 1 `S256 1 `S257 1 ]
+[n S254 . . . . ]
+"6319
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 6319: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS254 ~T0 @X0 0 e@3998 ]
 "7 ./cabecera.h
 [p x PLLSEL  =  PLL4X    ]
 "8
@@ -814,220 +808,325 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13652
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h: 13652: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"5 maincode2.c
-[; ;maincode2.c: 5: unsigned char centenas = 0;
+"5 maincode.c
+[; ;maincode.c: 5: unsigned char centenas = 0;
 [v _centenas `uc ~T0 @X0 1 e ]
 [i _centenas
 -> -> 0 `i `uc
 ]
 "6
-[; ;maincode2.c: 6: unsigned char decenas = 0;
+[; ;maincode.c: 6: unsigned char decenas = 0;
 [v _decenas `uc ~T0 @X0 1 e ]
 [i _decenas
 -> -> 0 `i `uc
 ]
 "7
-[; ;maincode2.c: 7: unsigned char unidades = 0;
+[; ;maincode.c: 7: unsigned char unidades = 0;
 [v _unidades `uc ~T0 @X0 1 e ]
 [i _unidades
 -> -> 0 `i `uc
 ]
-"9
-[; ;maincode2.c: 9: void configuro(void){
+"8
+[; ;maincode.c: 8: unsigned char horas = 14, minutos = 16, segundos = 0, ticks = 0;
+[v _horas `uc ~T0 @X0 1 e ]
+[i _horas
+-> -> 14 `i `uc
+]
+[v _minutos `uc ~T0 @X0 1 e ]
+[i _minutos
+-> -> 16 `i `uc
+]
+[v _segundos `uc ~T0 @X0 1 e ]
+[i _segundos
+-> -> 0 `i `uc
+]
+[v _ticks `uc ~T0 @X0 1 e ]
+[i _ticks
+-> -> 0 `i `uc
+]
+"10
+[; ;maincode.c: 10: void configuro(void){
 [v _configuro `(v ~T0 @X0 1 ef ]
 {
 [e :U _configuro ]
 [f ]
-"10
-[; ;maincode2.c: 10:     OSCCON = 0x52;
-[e = _OSCCON -> -> 82 `i `uc ]
 "11
-[; ;maincode2.c: 11:     TRISAbits.RA0 = 1;
-[e = . . _TRISAbits 1 0 -> -> 1 `i `uc ]
+[; ;maincode.c: 11:     OSCCON = 0x52;
+[e = _OSCCON -> -> 82 `i `uc ]
 "12
-[; ;maincode2.c: 12:     ANSELAbits.ANSA0 = 1;
-[e = . . _ANSELAbits 0 0 -> -> 1 `i `uc ]
+[; ;maincode.c: 12:     T1CON = 0x01;
+[e = _T1CON -> -> 1 `i `uc ]
 "13
-[; ;maincode2.c: 13:     TRISAbits.RA1 = 1;
-[e = . . _TRISAbits 1 1 -> -> 1 `i `uc ]
+[; ;maincode.c: 13:     CCP1CON = 0x0B;
+[e = _CCP1CON -> -> 11 `i `uc ]
 "14
-[; ;maincode2.c: 14:     ANSELAbits.ANSA1 = 1;
-[e = . . _ANSELAbits 0 1 -> -> 1 `i `uc ]
+[; ;maincode.c: 14:     CCPR1H = 0x27;
+[e = _CCPR1H -> -> 39 `i `uc ]
 "15
-[; ;maincode2.c: 15:     TRISAbits.RA3 = 1;
-[e = . . _TRISAbits 1 3 -> -> 1 `i `uc ]
+[; ;maincode.c: 15:     CCPR1L = 0x10;
+[e = _CCPR1L -> -> 16 `i `uc ]
 "16
-[; ;maincode2.c: 16:     ANSELAbits.ANSA3 = 1;
-[e = . . _ANSELAbits 0 3 -> -> 1 `i `uc ]
+[; ;maincode.c: 16:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"17
+[; ;maincode.c: 17:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
 "18
-[; ;maincode2.c: 18:     ADCON2 = 0x24;
-[e = _ADCON2 -> -> 36 `i `uc ]
+[; ;maincode.c: 18:     PIE1bits.CCP1IE = 1;
+[e = . . _PIE1bits 0 2 -> -> 1 `i `uc ]
 "19
-[; ;maincode2.c: 19:     ADCON1 = 0x04;
-[e = _ADCON1 -> -> 4 `i `uc ]
-"20
-[; ;maincode2.c: 20:     ADCON0 = 0x01;
-[e = _ADCON0 -> -> 1 `i `uc ]
-"21
-[; ;maincode2.c: 21: }
+[; ;maincode.c: 19: }
 [e :UE 636 ]
 }
-"23
-[; ;maincode2.c: 23: void LCD_Init(void){
+"21
+[; ;maincode.c: 21: void LCD_Init(void){
 [v _LCD_Init `(v ~T0 @X0 1 ef ]
 {
 [e :U _LCD_Init ]
 [f ]
-"24
-[; ;maincode2.c: 24:     TRISD = 0x00;
+"22
+[; ;maincode.c: 22:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"25
-[; ;maincode2.c: 25:     _delay((unsigned long)((29)*(4000000UL/4000.0)));
+"23
+[; ;maincode.c: 23:     _delay((unsigned long)((29)*(4000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 29 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"26
-[; ;maincode2.c: 26:     LCD_CONFIG();
+"24
+[; ;maincode.c: 24:     LCD_CONFIG();
 [e ( _LCD_CONFIG ..  ]
-"27
-[; ;maincode2.c: 27:     BORRAR_LCD();
+"25
+[; ;maincode.c: 25:     BORRAR_LCD();
 [e ( _BORRAR_LCD ..  ]
-"28
-[; ;maincode2.c: 28:     CURSOR_HOME();
+"26
+[; ;maincode.c: 26:     CURSOR_HOME();
 [e ( _CURSOR_HOME ..  ]
-"29
-[; ;maincode2.c: 29:     CURSOR_ONOFF(1);
+"27
+[; ;maincode.c: 27:     CURSOR_ONOFF(1);
 [e ( _CURSOR_ONOFF (1 -> -> 1 `i `uc ]
-"30
-[; ;maincode2.c: 30: }
+"28
+[; ;maincode.c: 28: }
 [e :UE 637 ]
 }
-"32
-[; ;maincode2.c: 32: convierte(unsigned char numero){
+"30
+[; ;maincode.c: 30: convierte(unsigned char numero){
 [v _convierte `(i ~T0 @X0 1 ef1`uc ]
 {
 [e :U _convierte ]
 [v _numero `uc ~T0 @X0 1 r1 ]
 [f ]
-"33
-[; ;maincode2.c: 33:     centenas = numero / 100;
+"31
+[; ;maincode.c: 31:     centenas = numero / 100;
 [e = _centenas -> / -> _numero `i -> 100 `i `uc ]
-"34
-[; ;maincode2.c: 34:     decenas = (numero % 100) / 10;
+"32
+[; ;maincode.c: 32:     decenas = (numero % 100) / 10;
 [e = _decenas -> / % -> _numero `i -> 100 `i -> 10 `i `uc ]
-"35
-[; ;maincode2.c: 35:     unidades = numero % 10;
+"33
+[; ;maincode.c: 33:     unidades = numero % 10;
 [e = _unidades -> % -> _numero `i -> 10 `i `uc ]
-"36
-[; ;maincode2.c: 36: }
+"34
+[; ;maincode.c: 34: }
 [e :UE 638 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"38
-[; ;maincode2.c: 38: void main(void) {
+"36
+[; ;maincode.c: 36: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"39
-[; ;maincode2.c: 39:     configuro();
+"37
+[; ;maincode.c: 37:     configuro();
 [e ( _configuro ..  ]
-"40
-[; ;maincode2.c: 40:     LCD_Init();
+"38
+[; ;maincode.c: 38:     LCD_Init();
 [e ( _LCD_Init ..  ]
-"41
-[; ;maincode2.c: 41:     POS_CURSOR(1,0);
+"39
+[; ;maincode.c: 39:     POS_CURSOR(1,0);
 [e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"42
-[; ;maincode2.c: 42:     ESCRIBE_MENSAJE("Hola mundo",10);
+"40
+[; ;maincode.c: 40:     ESCRIBE_MENSAJE("Hola mundo",10);
 [e ( _ESCRIBE_MENSAJE (2 , :s 1C -> -> 10 `i `uc ]
-"43
-[; ;maincode2.c: 43:     POS_CURSOR(2,0);
+"41
+[; ;maincode.c: 41:     POS_CURSOR(2,0);
 [e ( _POS_CURSOR (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
-"44
-[; ;maincode2.c: 44:     ESCRIBE_MENSAJE("UPC Verano 2023",15);
+"42
+[; ;maincode.c: 42:     ESCRIBE_MENSAJE("UPC Verano 2023",15);
 [e ( _ESCRIBE_MENSAJE (2 , :s 2C -> -> 15 `i `uc ]
-"45
-[; ;maincode2.c: 45:     _delay((unsigned long)((2000)*(4000000UL/4000.0)));
+"43
+[; ;maincode.c: 43:     _delay((unsigned long)((2000)*(4000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"46
-[; ;maincode2.c: 46:     BORRAR_LCD();
+"44
+[; ;maincode.c: 44:     BORRAR_LCD();
 [e ( _BORRAR_LCD ..  ]
+"45
+[; ;maincode.c: 45:     POS_CURSOR(1,2);
+[e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+"46
+[; ;maincode.c: 46:     ESCRIBE_MENSAJE("Relojito UPC",12);
+[e ( _ESCRIBE_MENSAJE (2 , :s 3C -> -> 12 `i `uc ]
 "47
-[; ;maincode2.c: 47:     while(1){
+[; ;maincode.c: 47:     while(1){
 [e :U 641 ]
 {
 "48
-[; ;maincode2.c: 48:         ADCON0 = 0x01;
-[e = _ADCON0 -> -> 1 `i `uc ]
-"49
-[; ;maincode2.c: 49:         ADCON0bits.GO_DONE = 1;
-[e = . . _ADCON0bits 7 1 -> -> 1 `i `uc ]
-"50
-[; ;maincode2.c: 50:         while(ADCON0bits.GO_DONE == 1);
-[e $U 643  ]
-[e :U 644 ]
-[e :U 643 ]
-[e $ == -> . . _ADCON0bits 7 1 `i -> 1 `i 644  ]
-[e :U 645 ]
-"51
-[; ;maincode2.c: 51:         convierte((ADRESH>>1));
-[e ( _convierte (1 -> >> -> _ADRESH `i -> 1 `i `uc ]
-"52
-[; ;maincode2.c: 52:         POS_CURSOR(1,0);
-[e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
-"53
-[; ;maincode2.c: 53:         ESCRIBE_MENSAJE("Canal 0:",8);
-[e ( _ESCRIBE_MENSAJE (2 , :s 3C -> -> 8 `i `uc ]
-"54
-[; ;maincode2.c: 54:         ENVIA_CHAR(centenas+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centenas `i -> 48 `i `uc ]
-"55
-[; ;maincode2.c: 55:         ENVIA_CHAR(decenas+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decenas `i -> 48 `i `uc ]
-"56
-[; ;maincode2.c: 56:         ENVIA_CHAR(unidades+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidades `i -> 48 `i `uc ]
-"57
-[; ;maincode2.c: 57:         ADCON0 = 0x05;
-[e = _ADCON0 -> -> 5 `i `uc ]
-"58
-[; ;maincode2.c: 58:         ADCON0bits.GO_DONE = 1;
-[e = . . _ADCON0bits 7 1 -> -> 1 `i `uc ]
-"59
-[; ;maincode2.c: 59:         while(ADCON0bits.GO_DONE == 1);
-[e $U 646  ]
-[e :U 647 ]
-[e :U 646 ]
-[e $ == -> . . _ADCON0bits 7 1 `i -> 1 `i 647  ]
-[e :U 648 ]
-"60
-[; ;maincode2.c: 60:         convierte(ADRESH);
-[e ( _convierte (1 _ADRESH ]
-"61
-[; ;maincode2.c: 61:         POS_CURSOR(2,0);
+[; ;maincode.c: 48:     POS_CURSOR(2,0);
 [e ( _POS_CURSOR (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
-"62
-[; ;maincode2.c: 62:         ESCRIBE_MENSAJE("Canal 1:",8);
-[e ( _ESCRIBE_MENSAJE (2 , :s 4C -> -> 8 `i `uc ]
-"63
-[; ;maincode2.c: 63:         ENVIA_CHAR(centenas+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centenas `i -> 48 `i `uc ]
-"64
-[; ;maincode2.c: 64:         ENVIA_CHAR(decenas+0x30);
+"49
+[; ;maincode.c: 49:     convierte(horas);
+[e ( _convierte (1 _horas ]
+"50
+[; ;maincode.c: 50:     ENVIA_CHAR(decenas+0x30);
 [e ( _ENVIA_CHAR (1 -> + -> _decenas `i -> 48 `i `uc ]
-"65
-[; ;maincode2.c: 65:         ENVIA_CHAR(unidades+0x30);
+"51
+[; ;maincode.c: 51:     ENVIA_CHAR(unidades+0x30);
 [e ( _ENVIA_CHAR (1 -> + -> _unidades `i -> 48 `i `uc ]
-"66
-[; ;maincode2.c: 66:     }
+"52
+[; ;maincode.c: 52:     ENVIA_CHAR(':');
+[e ( _ENVIA_CHAR (1 -> -> 58 `ui `uc ]
+"53
+[; ;maincode.c: 53:     convierte(minutos);
+[e ( _convierte (1 _minutos ]
+"54
+[; ;maincode.c: 54:     ENVIA_CHAR(decenas+0x30);
+[e ( _ENVIA_CHAR (1 -> + -> _decenas `i -> 48 `i `uc ]
+"55
+[; ;maincode.c: 55:     ENVIA_CHAR(unidades+0x30);
+[e ( _ENVIA_CHAR (1 -> + -> _unidades `i -> 48 `i `uc ]
+"56
+[; ;maincode.c: 56:     ENVIA_CHAR(':');
+[e ( _ENVIA_CHAR (1 -> -> 58 `ui `uc ]
+"57
+[; ;maincode.c: 57:     convierte(segundos);
+[e ( _convierte (1 _segundos ]
+"58
+[; ;maincode.c: 58:     ENVIA_CHAR(decenas+0x30);
+[e ( _ENVIA_CHAR (1 -> + -> _decenas `i -> 48 `i `uc ]
+"59
+[; ;maincode.c: 59:     ENVIA_CHAR(unidades+0x30);
+[e ( _ENVIA_CHAR (1 -> + -> _unidades `i -> 48 `i `uc ]
+"60
+[; ;maincode.c: 60:     ENVIA_CHAR(':');
+[e ( _ENVIA_CHAR (1 -> -> 58 `ui `uc ]
+"61
+[; ;maincode.c: 61:     convierte(ticks);
+[e ( _convierte (1 _ticks ]
+"62
+[; ;maincode.c: 62:     ENVIA_CHAR(decenas+0x30);
+[e ( _ENVIA_CHAR (1 -> + -> _decenas `i -> 48 `i `uc ]
+"63
+[; ;maincode.c: 63:     ENVIA_CHAR(unidades+0x30);
+[e ( _ENVIA_CHAR (1 -> + -> _unidades `i -> 48 `i `uc ]
+"64
+[; ;maincode.c: 64:     }
 }
 [e :U 640 ]
 [e $U 641  ]
 [e :U 642 ]
-"67
-[; ;maincode2.c: 67: }
+"65
+[; ;maincode.c: 65: }
 [e :UE 639 ]
 }
+[v $root$_CCP1_ISR `(v ~T0 @X0 0 e ]
+"67
+[; ;maincode.c: 67: void __attribute__((picinterrupt(("")))) CCP1_ISR(void){
+[v _CCP1_ISR `(v ~T1 @X0 1 ef ]
+{
+[e :U _CCP1_ISR ]
+[f ]
+"68
+[; ;maincode.c: 68:     PIR1bits.CCP1IF = 0;
+[e = . . _PIR1bits 0 2 -> -> 0 `i `uc ]
+"69
+[; ;maincode.c: 69:     if(ticks == 99){
+[e $ ! == -> _ticks `i -> 99 `i 644  ]
+{
+"70
+[; ;maincode.c: 70:         ticks = 0;
+[e = _ticks -> -> 0 `i `uc ]
+"71
+[; ;maincode.c: 71:         if(segundos == 59){
+[e $ ! == -> _segundos `i -> 59 `i 645  ]
+{
+"72
+[; ;maincode.c: 72:             segundos = 0;
+[e = _segundos -> -> 0 `i `uc ]
+"73
+[; ;maincode.c: 73:             if(minutos == 59){
+[e $ ! == -> _minutos `i -> 59 `i 646  ]
+{
+"74
+[; ;maincode.c: 74:                 minutos = 0;
+[e = _minutos -> -> 0 `i `uc ]
+"75
+[; ;maincode.c: 75:                 if(horas == 23){
+[e $ ! == -> _horas `i -> 23 `i 647  ]
+{
+"76
+[; ;maincode.c: 76:                     horas = 0;
+[e = _horas -> -> 0 `i `uc ]
+"77
+[; ;maincode.c: 77:                 }
+}
+[e $U 648  ]
+"78
+[; ;maincode.c: 78:                 else{
+[e :U 647 ]
+{
+"79
+[; ;maincode.c: 79:                     horas++;
+[e ++ _horas -> -> 1 `i `uc ]
+"80
+[; ;maincode.c: 80:                 }
+}
+[e :U 648 ]
+"81
+[; ;maincode.c: 81:             }
+}
+[e $U 649  ]
+"82
+[; ;maincode.c: 82:             else{
+[e :U 646 ]
+{
+"83
+[; ;maincode.c: 83:                 minutos++;
+[e ++ _minutos -> -> 1 `i `uc ]
+"84
+[; ;maincode.c: 84:             }
+}
+[e :U 649 ]
+"85
+[; ;maincode.c: 85:         }
+}
+[e $U 650  ]
+"86
+[; ;maincode.c: 86:         else{
+[e :U 645 ]
+{
+"87
+[; ;maincode.c: 87:             segundos++;
+[e ++ _segundos -> -> 1 `i `uc ]
+"88
+[; ;maincode.c: 88:         }
+}
+[e :U 650 ]
+"89
+[; ;maincode.c: 89:     }
+}
+[e $U 651  ]
+"90
+[; ;maincode.c: 90:     else{
+[e :U 644 ]
+{
+"91
+[; ;maincode.c: 91:         ticks++;
+[e ++ _ticks -> -> 1 `i `uc ]
+"92
+[; ;maincode.c: 92:     }
+}
+[e :U 651 ]
+"93
+[; ;maincode.c: 93: }
+[e :UE 643 ]
+}
 [a 1C 72 111 108 97 32 109 117 110 100 111 0 ]
-[a 4C 67 97 110 97 108 32 49 58 0 ]
-[a 3C 67 97 110 97 108 32 48 58 0 ]
+[a 3C 82 101 108 111 106 105 116 111 32 85 80 67 0 ]
 [a 2C 85 80 67 32 86 101 114 97 110 111 32 50 48 50 51 0 ]

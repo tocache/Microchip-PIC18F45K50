@@ -1,4 +1,4 @@
-# 1 "maincode2.c"
+# 1 "LCD.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,81 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "maincode2.c" 2
-# 1 "./cabecera.h" 1
-
-
-
-
-
-
-#pragma config PLLSEL = PLL4X
-#pragma config CFGPLLEN = OFF
-#pragma config CPUDIV = NOCLKDIV
-#pragma config LS48MHZ = SYS24X4
-
-
-#pragma config FOSC = INTOSCIO
-#pragma config PCLKEN = ON
-#pragma config FCMEN = OFF
-#pragma config IESO = OFF
-
-
-#pragma config nPWRTEN = ON
-#pragma config BOREN = OFF
-#pragma config BORV = 190
-#pragma config nLPBOR = OFF
-
-
-#pragma config WDTEN = OFF
-#pragma config WDTPS = 32768
-
-
-#pragma config CCP2MX = RC1
-#pragma config PBADEN = OFF
-#pragma config T3CMX = RC0
-#pragma config SDOMX = RB3
-#pragma config MCLRE = ON
-
-
-#pragma config STVREN = ON
-#pragma config LVP = OFF
-#pragma config ICPRT = OFF
-#pragma config XINST = OFF
-
-
-#pragma config CP0 = OFF
-#pragma config CP1 = OFF
-#pragma config CP2 = OFF
-#pragma config CP3 = OFF
-
-
-#pragma config CPB = OFF
-#pragma config CPD = OFF
-
-
-#pragma config WRT0 = OFF
-#pragma config WRT1 = OFF
-#pragma config WRT2 = OFF
-#pragma config WRT3 = OFF
-
-
-#pragma config WRTC = OFF
-#pragma config WRTB = OFF
-#pragma config WRTD = OFF
-
-
-#pragma config EBTR0 = OFF
-#pragma config EBTR1 = OFF
-#pragma config EBTR2 = OFF
-#pragma config EBTR3 = OFF
-
-
-#pragma config EBTRB = OFF
-
-
-
-
+# 1 "LCD.c" 2
 
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 3
@@ -8172,8 +8098,7 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 2 3
-# 74 "./cabecera.h" 2
-# 1 "maincode2.c" 2
+# 2 "LCD.c" 2
 
 # 1 "./LCD.h" 1
 
@@ -8196,70 +8121,164 @@ void LEER_LCD(void);
 void BLINK_CURSOR(unsigned char val);
 void GENERACARACTER(const unsigned char *vector,unsigned char pos);
 void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
-# 2 "maincode2.c" 2
+# 3 "LCD.c" 2
 
 
 
-unsigned char centenas = 0;
-unsigned char decenas = 0;
-unsigned char unidades = 0;
-
-void configuro(void){
-    OSCCON = 0x52;
-    TRISAbits.RA0 = 1;
-    ANSELAbits.ANSA0 = 1;
-    TRISAbits.RA1 = 1;
-    ANSELAbits.ANSA1 = 1;
-    TRISAbits.RA3 = 1;
-    ANSELAbits.ANSA3 = 1;
-
-    ADCON2 = 0x24;
-    ADCON1 = 0x04;
-    ADCON0 = 0x01;
+void POS_CURSOR(unsigned char fila,unsigned char columna)
+{
+ if(fila == 1)
+ {
+  ENVIA_LCD_CMD(0x80+columna);
+ }
+ else if(fila == 2)
+ {
+  ENVIA_LCD_CMD(0xC0+columna);
+ }
 }
 
-void LCD_Init(void){
-    TRISD = 0x00;
-    _delay((unsigned long)((29)*(4000000UL/4000.0)));
-    LCD_CONFIG();
-    BORRAR_LCD();
-    CURSOR_HOME();
-    CURSOR_ONOFF(1);
+void BLINK_CURSOR(unsigned char val)
+{
+ if(val == 1) ENVIA_LCD_CMD(0x0E);
+ if(val == 0 ) ENVIA_LCD_CMD(0x0F);
 }
 
-convierte(unsigned char numero){
-    centenas = numero / 100;
-    decenas = (numero % 100) / 10;
-    unidades = numero % 10;
+void DISPLAY_ONOFF(unsigned char estado)
+{
+ if(estado == 0) ENVIA_LCD_CMD(0x0F);
+ if(estado == 1) ENVIA_LCD_CMD(0x08);
 }
 
-void main(void) {
-    configuro();
-    LCD_Init();
-    POS_CURSOR(1,0);
-    ESCRIBE_MENSAJE("Hola mundo",10);
-    POS_CURSOR(2,0);
-    ESCRIBE_MENSAJE("UPC Verano 2023",15);
-    _delay((unsigned long)((2000)*(4000000UL/4000.0)));
-    BORRAR_LCD();
-    while(1){
-        ADCON0 = 0x01;
-        ADCON0bits.GO_DONE = 1;
-        while(ADCON0bits.GO_DONE == 1);
-        convierte((ADRESH>>1));
-        POS_CURSOR(1,0);
-        ESCRIBE_MENSAJE("Canal 0:",8);
-        ENVIA_CHAR(centenas+0x30);
-        ENVIA_CHAR(decenas+0x30);
-        ENVIA_CHAR(unidades+0x30);
-        ADCON0 = 0x05;
-        ADCON0bits.GO_DONE = 1;
-        while(ADCON0bits.GO_DONE == 1);
-        convierte(ADRESH);
-        POS_CURSOR(2,0);
-        ESCRIBE_MENSAJE("Canal 1:",8);
-        ENVIA_CHAR(centenas+0x30);
-        ENVIA_CHAR(decenas+0x30);
-        ENVIA_CHAR(unidades+0x30);
-    }
+void CURSOR_HOME(void)
+{
+ ENVIA_LCD_CMD(0x02);
+}
+
+void CURSOR_ONOFF(unsigned char estado)
+{
+ if(estado == 0) ENVIA_LCD_CMD(0x0E);
+ if(estado == 1) ENVIA_LCD_CMD(0x0C);
+}
+
+void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam)
+{
+ unsigned char i = 0;
+ for(i = 0; i<tam; i++)
+ {
+  ENVIA_CHAR(cadena[i]);
+ }
+}
+
+void ENVIA_CHAR(unsigned char dato)
+{
+ unsigned char aux;
+ LATDbits.LATD0 = 1;
+ LEER_LCD();
+ TRISD = 0x00;
+        _delay(1200);
+
+ LATDbits.LATD1 = 0;
+ LATDbits.LATD2 = 0;
+ LATDbits.LATD0 = 1;
+ aux = dato & 0xF0;
+ ENVIA_NIBBLE(aux);
+ aux = dato << 4;
+ ENVIA_NIBBLE(aux);
+}
+
+void BORRAR_LCD(void)
+{
+ ENVIA_LCD_CMD(0x01);
+}
+
+void LCD_CONFIG(void)
+{
+ LATDbits.LATD0 = 0;
+ LATDbits.LATD1 = 0;
+ ENVIA_NIBBLE(0x30);
+        _delay(24000);
+        _delay(24000);
+
+
+ ENVIA_NIBBLE(0x30);
+
+ _delay(1200);
+        ENVIA_NIBBLE(0x30);
+ ENVIA_NIBBLE(0x20);
+ ENVIA_LCD_CMD(0x01);
+ ENVIA_LCD_CMD(0x28);
+ ENVIA_LCD_CMD(0x0F);
+ ENVIA_LCD_CMD(0x06);
+ ENVIA_LCD_CMD(0x01);
+}
+
+void ENVIA_NIBBLE(unsigned char dato)
+{
+ LATD &= 0x0F;
+ dato &= 0xF0;
+ LATD|= dato;
+ LATDbits.LATD2 = 1;
+
+        _delay(1200);
+ LATDbits.LATD2 = 0;
+}
+
+void ENVIA_LCD_CMD(unsigned char dato)
+{
+ unsigned char aux;
+ LATDbits.LATD0 = 0;
+ LEER_LCD();
+ TRISD = 0b00000000;
+
+        _delay(1200);
+        LATDbits.LATD1 = 0;
+ LATDbits.LATD2 = 0;
+ LATDbits.LATD0 = 0;
+ aux = dato & 0xF0;
+ ENVIA_NIBBLE(aux);
+ aux = dato<<4;
+ ENVIA_NIBBLE(aux);
+}
+
+void LEER_LCD(void)
+{
+ unsigned char aux;
+ TRISD = 0xF8;
+ LATDbits.LATD0 = 0;
+ LATDbits.LATD1 = 1;
+ LATDbits.LATD2 = 1;
+        _delay(1200);
+
+ aux = PORTD;
+ LATDbits.LATD2 = 0;
+        _delay(1200);
+
+ LATDbits.LATD2 = 1;
+        _delay(1200);
+
+ LATDbits.LATD2 = 0;
+ aux = aux & 0x80;
+ while(aux == 0x80)
+        {
+            LATDbits.LATD2 = 1;
+            _delay(1200);
+            aux = PORTD;
+            LATDbits.LATD2 = 0;
+            _delay(1200);
+            LATDbits.LATD2 = 1;
+            _delay(1200);
+            LATDbits.LATD2 = 0;
+            aux = aux & 0x80;
+ }
+}
+
+void GENERACARACTER(const unsigned char *vector,unsigned char pos)
+{
+ unsigned char i;
+ ENVIA_LCD_CMD(0x40+8*pos);
+ for(i=0;i<8;i++)
+ {
+  ENVIA_CHAR(vector[i]);
+ }
+ ENVIA_LCD_CMD(0x80);
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\20230_el53_semana4_c_lcd.X.production.hex">
+  <executable name="dist/default/production\20230_el53_semana5_c_relojito.X.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>32768</length>
-      <used>1380</used>
-      <free>31388</free>
+      <used>1516</used>
+      <free>31252</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>2048</length>
-      <used>20</used>
-      <free>2028</free>
+      <used>25</used>
+      <free>2023</free>
     </memory>
   </executable>
 </project>

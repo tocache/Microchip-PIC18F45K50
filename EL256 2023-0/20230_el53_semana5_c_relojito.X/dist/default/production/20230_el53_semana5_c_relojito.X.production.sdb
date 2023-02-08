@@ -31,7 +31,7 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"6 E:\Micro_202300\20230_el53_semana4_c_lcd.X\LCD.c
+"6 E:\Micro_202300\20230_el53_semana5_c_relojito.X\LCD.c
 [v _POS_CURSOR POS_CURSOR `(v  1 e 1 0 ]
 "30
 [v _CURSOR_HOME CURSOR_HOME `(v  1 e 1 0 ]
@@ -51,25 +51,17 @@
 [v _ENVIA_LCD_CMD ENVIA_LCD_CMD `(v  1 e 1 0 ]
 "121
 [v _LEER_LCD LEER_LCD `(v  1 e 1 0 ]
-"9 E:\Micro_202300\20230_el53_semana4_c_lcd.X\maincode2.c
+"10 E:\Micro_202300\20230_el53_semana5_c_relojito.X\maincode.c
 [v _configuro configuro `(v  1 e 1 0 ]
-"23
+"21
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
-"32
+"30
 [v _convierte convierte `(i  1 e 2 0 ]
-"38
+"36
 [v _main main `(v  1 e 1 0 ]
-[s S171 . 1 `uc 1 ANSA0 1 0 :1:0 
-`uc 1 ANSA1 1 0 :1:1 
-`uc 1 ANSA2 1 0 :1:2 
-`uc 1 ANSA3 1 0 :1:3 
-`uc 1 . 1 0 :1:4 
-`uc 1 ANSA5 1 0 :1:5 
-]
-"248 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
-[u S178 . 1 `S171 1 . 1 0 ]
-[v _ANSELAbits ANSELAbits `VES178  1 e 1 @3931 ]
-"3306
+"67
+[v _CCP1_ISR CCP1_ISR `IIH(v  1 e 1 0 ]
+"3306 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 "4106
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
@@ -94,85 +86,110 @@
 ]
 [u S52 . 1 `S34 1 . 1 0 `S43 1 . 1 0 ]
 [v _LATDbits LATDbits `VES52  1 e 1 @3980 ]
-[s S131 . 1 `uc 1 TRISA0 1 0 :1:0 
-`uc 1 TRISA1 1 0 :1:1 
-`uc 1 TRISA2 1 0 :1:2 
-`uc 1 TRISA3 1 0 :1:3 
-`uc 1 TRISA4 1 0 :1:4 
-`uc 1 TRISA5 1 0 :1:5 
-`uc 1 TRISA6 1 0 :1:6 
-`uc 1 TRISA7 1 0 :1:7 
-]
-"4659
-[s S140 . 1 `uc 1 RA0 1 0 :1:0 
-`uc 1 RA1 1 0 :1:1 
-`uc 1 RA2 1 0 :1:2 
-`uc 1 RA3 1 0 :1:3 
-`uc 1 RA4 1 0 :1:4 
-`uc 1 RA5 1 0 :1:5 
-`uc 1 RA6 1 0 :1:6 
-`uc 1 RA7 1 0 :1:7 
-]
-[u S149 . 1 `S131 1 . 1 0 `S140 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES149  1 e 1 @3986 ]
 "5249
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-"9637
-[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
-"9708
-[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-"9776
-[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S200 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO_NOT_DONE 1 0 :1:1 
+[s S184 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 ACTIE 1 0 :1:7 
 ]
-"9816
-[s S203 . 1 `uc 1 ADON 1 0 :1:0 
-`uc 1 GO_nDONE 1 0 :1:1 
-`uc 1 CHS 1 0 :5:2 
+"6220
+[s S193 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIE 1 0 :1:7 
 ]
-[s S207 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 DONE 1 0 :1:1 
+[s S200 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIE 1 0 :1:7 
 ]
-[s S210 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO 1 0 :1:1 
+[u S203 . 1 `S184 1 . 1 0 `S193 1 . 1 0 `S200 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES203  1 e 1 @3997 ]
+[s S237 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 ACTIF 1 0 :1:7 
 ]
-[s S213 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 NOT_DONE 1 0 :1:1 
+"6319
+[s S246 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIF 1 0 :1:7 
 ]
-[s S216 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 nDONE 1 0 :1:1 
+[s S253 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
 ]
-[s S219 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GODONE 1 0 :1:1 
-]
-[s S222 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO_DONE 1 0 :1:1 
-]
-[u S225 . 1 `S200 1 . 1 0 `S203 1 . 1 0 `S207 1 . 1 0 `S210 1 . 1 0 `S213 1 . 1 0 `S216 1 . 1 0 `S219 1 . 1 0 `S222 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES225  1 e 1 @4034 ]
-"9878
-[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+[u S256 . 1 `S237 1 . 1 0 `S246 1 . 1 0 `S253 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES256  1 e 1 @3998 ]
+"9398
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"9597
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"9617
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @4031 ]
+"11958
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
 "12357
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
-"5 E:\Micro_202300\20230_el53_semana4_c_lcd.X\maincode2.c
+[s S135 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"13258
+[s S144 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S153 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S157 . 1 `S135 1 . 1 0 `S144 1 . 1 0 `S153 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES157  1 e 1 @4082 ]
+"5 E:\Micro_202300\20230_el53_semana5_c_relojito.X\maincode.c
 [v _centenas centenas `uc  1 e 1 0 ]
 "6
 [v _decenas decenas `uc  1 e 1 0 ]
 "7
 [v _unidades unidades `uc  1 e 1 0 ]
-"38
+"8
+[v _horas horas `uc  1 e 1 0 ]
+[v _minutos minutos `uc  1 e 1 0 ]
+[v _segundos segundos `uc  1 e 1 0 ]
+[v _ticks ticks `uc  1 e 1 0 ]
+"36
 [v _main main `(v  1 e 1 0 ]
 {
-"67
+"65
 } 0
-"32
+"30
 [v _convierte convierte `(i  1 e 2 0 ]
 {
 [v convierte@numero numero `uc  1 a 1 wreg ]
 [v convierte@numero numero `uc  1 a 1 wreg ]
 [v convierte@numero numero `uc  1 a 1 14 ]
-"36
+"34
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
@@ -198,12 +215,12 @@
 [v ___awdiv@divisor divisor `i  1 p 2 8 ]
 "41
 } 0
-"9 E:\Micro_202300\20230_el53_semana4_c_lcd.X\maincode2.c
+"10 E:\Micro_202300\20230_el53_semana5_c_relojito.X\maincode.c
 [v _configuro configuro `(v  1 e 1 0 ]
 {
-"21
+"19
 } 0
-"6 E:\Micro_202300\20230_el53_semana4_c_lcd.X\LCD.c
+"6 E:\Micro_202300\20230_el53_semana5_c_relojito.X\LCD.c
 [v _POS_CURSOR POS_CURSOR `(v  1 e 1 0 ]
 {
 [v POS_CURSOR@fila fila `uc  1 a 1 wreg ]
@@ -213,12 +230,12 @@
 [v POS_CURSOR@fila fila `uc  1 a 1 4 ]
 "16
 } 0
-"23 E:\Micro_202300\20230_el53_semana4_c_lcd.X\maincode2.c
+"21 E:\Micro_202300\20230_el53_semana5_c_relojito.X\maincode.c
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 {
-"30
+"28
 } 0
-"72 E:\Micro_202300\20230_el53_semana4_c_lcd.X\LCD.c
+"72 E:\Micro_202300\20230_el53_semana5_c_relojito.X\LCD.c
 [v _LCD_CONFIG LCD_CONFIG `(v  1 e 1 0 ]
 {
 "91
@@ -291,4 +308,9 @@
 "95
 [v ENVIA_NIBBLE@dato dato `uc  1 a 1 0 ]
 "102
+} 0
+"67 E:\Micro_202300\20230_el53_semana5_c_relojito.X\maincode.c
+[v _CCP1_ISR CCP1_ISR `IIH(v  1 e 1 0 ]
+{
+"93
 } 0

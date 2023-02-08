@@ -12,8 +12,11 @@ void configuro(void){
     ANSELAbits.ANSA0 = 1;            //Analogica RA0
     TRISAbits.RA1 = 1;          //Entrada RA1
     ANSELAbits.ANSA1 = 1;            //Analogica RA1
+    TRISAbits.RA3 = 1;          //Entrada RA1
+    ANSELAbits.ANSA3 = 1;            //Analogica RA1
+    
     ADCON2 = 0x24;              //Tiempo de conversion y justificacion
-    ADCON1 = 0x00;              //configuracion de vref
+    ADCON1 = 0x04;              //configuracion de vref
     ADCON0 = 0x01;              //encendido del a/d    
 }
 
@@ -45,7 +48,7 @@ void main(void) {
         ADCON0 = 0x01;
         ADCON0bits.GO_DONE = 1;         //Inicio la toma de una muestra en AN0
         while(ADCON0bits.GO_DONE == 1); //Espero a que termine de convertir
-        convierte(ADRESH);
+        convierte((ADRESH>>1));
         POS_CURSOR(1,0);
         ESCRIBE_MENSAJE("Canal 0:",8);
         ENVIA_CHAR(centenas+0x30);
