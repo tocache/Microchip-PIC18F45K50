@@ -1,0 +1,1011 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\20230_el53_semana6_c_motor.X.production.o
+cinit CODE 0 168E 168E 1E 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 E44 E44 116 1 2
+text1 CODE 0 1318 1318 5A 1 2
+text2 CODE 0 1124 1124 B0 1 2
+text3 CODE 0 1060 1060 C4 1 2
+text4 CODE 0 13C8 13C8 4E 1 2
+text5 CODE 0 C90 C90 1B4 1 2
+text6 CODE 0 F5A F5A 106 1 2
+text7 CODE 0 866 866 42A 1 2
+text8 CODE 0 1668 1668 26 1 2
+text9 CODE 0 1372 1372 56 1 2
+text10 CODE 0 1492 1492 3A 1 2
+text11 CODE 0 14CC 14CC 3A 1 2
+text12 CODE 0 1640 1640 28 1 2
+text13 CODE 0 12B8 12B8 60 1 2
+text14 CODE 0 1610 1610 30 1 2
+text15 CODE 0 16E4 16E4 8 1 2
+text16 CODE 0 16EC 16EC 8 1 2
+text17 CODE 0 1540 1540 34 1 2
+text18 CODE 0 1416 1416 3E 1 2
+text19 CODE 0 1574 1574 34 1 2
+text20 CODE 0 11D4 11D4 72 1 2
+text21 CODE 0 16AC 16AC 1C 1 2
+text23 CODE 0 1506 1506 3A 1 2
+text24 CODE 0 15A8 15A8 34 1 2
+text25 CODE 0 1454 1454 3E 1 2
+text26 CODE 0 15DC 15DC 34 1 2
+text27 CODE 0 1246 1246 72 1 2
+text28 CODE 0 16C8 16C8 1C 1 2
+cstackCOMRAM COMRAM 1 1 1 36 1 1
+temp COMRAM 1 3E 3E 1 1 1
+intcode CODE 0 8 8 A6 1 2
+smallconst SMALLCONST 0 800 800 66 1 2
+bssCOMRAM COMRAM 1 37 37 7 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 AE AE 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F53-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST B2-7FF 1
+CONST 16F4-7FFF 1
+SMALLCONST 16F4-7FFF 1
+CODE 4-7 1
+CODE B2-7FF 1
+CODE 16F4-7FFF 1
+BIGRAM 3F-7FF 1
+BIGSFR F53-FFF 1
+COMRAM 3F-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 16F4-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\20230_el53_semana6_c_motor.X.production.o
+8 intcode CODE >5666:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+8 intcode CODE >101:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1A intcode CODE >102:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1C intcode CODE >103:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+2E intcode CODE >104:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+30 intcode CODE >105:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+3A intcode CODE >106:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+4A intcode CODE >107:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+4E intcode CODE >108:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+60 intcode CODE >109:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+62 intcode CODE >110:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+6C intcode CODE >111:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+7C intcode CODE >112:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+80 intcode CODE >114:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+8A intcode CODE >115:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+9A intcode CODE >117:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+16C8 text28 CODE >93:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16CA text28 CODE >95:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16CE text28 CODE >96:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16D2 text28 CODE >97:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16D6 text28 CODE >98:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16D8 text28 CODE >100:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16E0 text28 CODE >101:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16E2 text28 CODE >102:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1246 text27 CODE >121:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1246 text27 CODE >124:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+124A text27 CODE >125:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+124C text27 CODE >126:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+124E text27 CODE >127:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1250 text27 CODE >128:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1258 text27 CODE >130:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+125C text27 CODE >131:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+125E text27 CODE >132:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1266 text27 CODE >134:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1268 text27 CODE >135:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1270 text27 CODE >137:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1272 text27 CODE >138:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1278 text27 CODE >139:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+127C text27 CODE >141:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+127E text27 CODE >142:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1286 text27 CODE >143:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+128A text27 CODE >144:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+128C text27 CODE >145:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1294 text27 CODE >146:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1296 text27 CODE >147:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+129E text27 CODE >148:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12A4 text27 CODE >139:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12B6 text27 CODE >151:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15DC text26 CODE >50:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15DE text26 CODE >53:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15E0 text26 CODE >54:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15E4 text26 CODE >55:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15E8 text26 CODE >56:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15F0 text26 CODE >58:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15F2 text26 CODE >59:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15F4 text26 CODE >60:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15F6 text26 CODE >61:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15FC text26 CODE >62:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1602 text26 CODE >63:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1608 text26 CODE >64:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+160E text26 CODE >65:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1454 text25 CODE >41:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1454 text25 CODE >43:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1458 text25 CODE >44:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1460 text25 CODE >46:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+147C text25 CODE >47:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1490 text25 CODE >48:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15A8 text24 CODE >104:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15AA text24 CODE >107:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15AC text24 CODE >108:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15B0 text24 CODE >109:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15B4 text24 CODE >111:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15BC text24 CODE >112:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15BE text24 CODE >113:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15C0 text24 CODE >114:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15C2 text24 CODE >115:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15C8 text24 CODE >116:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15CE text24 CODE >117:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15D4 text24 CODE >118:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15DA text24 CODE >119:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1506 text23 CODE >6:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1508 text23 CODE >8:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1518 text23 CODE >10:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1520 text23 CODE >11:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1524 text23 CODE >12:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1536 text23 CODE >14:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+153E text23 CODE >16:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16AC text21 CODE >93:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16AE text21 CODE >95:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16B2 text21 CODE >96:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16B6 text21 CODE >97:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16BA text21 CODE >98:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16BC text21 CODE >100:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16C4 text21 CODE >101:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16C6 text21 CODE >102:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11D4 text20 CODE >121:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11D4 text20 CODE >124:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11D8 text20 CODE >125:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11DA text20 CODE >126:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11DC text20 CODE >127:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11DE text20 CODE >128:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11E6 text20 CODE >130:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11EA text20 CODE >131:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11EC text20 CODE >132:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11F4 text20 CODE >134:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11F6 text20 CODE >135:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+11FE text20 CODE >137:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1200 text20 CODE >138:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1206 text20 CODE >139:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+120A text20 CODE >141:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+120C text20 CODE >142:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1214 text20 CODE >143:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1218 text20 CODE >144:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+121A text20 CODE >145:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1222 text20 CODE >146:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1224 text20 CODE >147:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+122C text20 CODE >148:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1232 text20 CODE >139:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1244 text20 CODE >151:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1574 text19 CODE >50:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1576 text19 CODE >53:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1578 text19 CODE >54:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+157C text19 CODE >55:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1580 text19 CODE >56:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1588 text19 CODE >58:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+158A text19 CODE >59:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+158C text19 CODE >60:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+158E text19 CODE >61:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1594 text19 CODE >62:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+159A text19 CODE >63:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15A0 text19 CODE >64:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+15A6 text19 CODE >65:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1416 text18 CODE >41:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1416 text18 CODE >43:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+141A text18 CODE >44:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1422 text18 CODE >46:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+143E text18 CODE >47:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1452 text18 CODE >48:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1540 text17 CODE >104:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1542 text17 CODE >107:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1544 text17 CODE >108:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1548 text17 CODE >109:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+154C text17 CODE >111:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1554 text17 CODE >112:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1556 text17 CODE >113:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1558 text17 CODE >114:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+155A text17 CODE >115:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1560 text17 CODE >116:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1566 text17 CODE >117:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+156C text17 CODE >118:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1572 text17 CODE >119:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16EC text16 CODE >67:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16EC text16 CODE >69:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16F2 text16 CODE >70:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16E4 text15 CODE >30:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16E4 text15 CODE >32:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+16EA text15 CODE >33:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1610 text14 CODE >35:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1612 text14 CODE >37:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1628 text14 CODE >38:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+163E text14 CODE >39:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12B8 text13 CODE >72:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12B8 text13 CODE >74:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12BA text13 CODE >75:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12BC text13 CODE >76:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12C2 text13 CODE >77:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12D0 text13 CODE >78:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12DE text13 CODE >81:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12E4 text13 CODE >83:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12EC text13 CODE >84:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12F2 text13 CODE >85:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12F8 text13 CODE >86:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+12FE text13 CODE >87:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1304 text13 CODE >88:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+130A text13 CODE >89:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1310 text13 CODE >90:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1316 text13 CODE >91:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1640 text12 CODE >40:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1640 text12 CODE >41:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1644 text12 CODE >42:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1654 text12 CODE >43:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1658 text12 CODE >44:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+165C text12 CODE >45:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1660 text12 CODE >46:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1666 text12 CODE >47:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+14CC text11 CODE >6:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+14CE text11 CODE >8:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+14DE text11 CODE >10:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+14E6 text11 CODE >11:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+14EA text11 CODE >12:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+14FC text11 CODE >14:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1504 text11 CODE >16:E:\Micro_202300\20230_el53_semana6_c_motor.X\LCD.c
+1492 text10 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+1492 text10 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+149A text10 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+149E text10 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+14A2 text10 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+14BE text10 CODE >11:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+14CA text10 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+1372 text9 CODE >55:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1372 text9 CODE >58:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1372 text9 CODE >59:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1382 text9 CODE >60:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+138A text9 CODE >62:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13A4 text9 CODE >63:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13B2 text9 CODE >64:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13C6 text9 CODE >65:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1668 text8 CODE >67:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1668 text8 CODE >68:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+166C text8 CODE >69:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+167A text8 CODE >70:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+167E text8 CODE >71:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+168C text8 CODE >72:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+866 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+866 text7 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+86C text7 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+872 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+880 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+882 text7 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+892 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8A2 text7 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8B2 text7 CODE >31:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8B4 text7 CODE >33:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8B8 text7 CODE >36:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8C8 text7 CODE >39:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8CE text7 CODE >40:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8D4 text7 CODE >41:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8E2 text7 CODE >42:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8E4 text7 CODE >45:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+8F4 text7 CODE >48:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+904 text7 CODE >50:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+914 text7 CODE >53:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+916 text7 CODE >54:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+91A text7 CODE >57:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+92A text7 CODE >58:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+92A text7 CODE >65:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+94A text7 CODE >66:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+95E text7 CODE >95:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+96A text7 CODE >96:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+974 text7 CODE >97:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+97E text7 CODE >98:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+98A text7 CODE >99:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+996 text7 CODE >100:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9A2 text7 CODE >101:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9AE text7 CODE >102:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9BA text7 CODE >103:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9C6 text7 CODE >104:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9D4 text7 CODE >105:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9E0 text7 CODE >106:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9F0 text7 CODE >107:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+9FC text7 CODE >108:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A0C text7 CODE >109:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A1A text7 CODE >110:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A26 text7 CODE >111:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A36 text7 CODE >112:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A42 text7 CODE >113:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A52 text7 CODE >114:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A5E text7 CODE >115:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A6E text7 CODE >116:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+A7A text7 CODE >117:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+AA4 text7 CODE >145:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+ADA text7 CODE >146:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+AE8 text7 CODE >149:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B02 text7 CODE >152:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B06 text7 CODE >153:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B10 text7 CODE >154:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B1E text7 CODE >155:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B20 text7 CODE >156:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B20 text7 CODE >157:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B2A text7 CODE >158:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B30 text7 CODE >152:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B3E text7 CODE >163:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B42 text7 CODE >164:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B50 text7 CODE >165:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B7E text7 CODE >166:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B82 text7 CODE >167:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B86 text7 CODE >168:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B86 text7 CODE >169:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B98 text7 CODE >173:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+B98 text7 CODE >174:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+BA8 text7 CODE >175:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+BB4 text7 CODE >176:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+BC2 text7 CODE >177:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+BEC text7 CODE >178:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+BF0 text7 CODE >183:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C0A text7 CODE >184:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C1A text7 CODE >185:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C1E text7 CODE >187:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C38 text7 CODE >188:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C48 text7 CODE >190:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C4C text7 CODE >191:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C50 text7 CODE >192:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C50 text7 CODE >194:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C54 text7 CODE >195:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C64 text7 CODE >196:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C72 text7 CODE >197:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C74 text7 CODE >199:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C7A text7 CODE >201:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C7E text7 CODE >203:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+C8E text7 CODE >205:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+F5A text6 CODE >43:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+F5A text6 CODE >47:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+F70 text6 CODE >48:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+F84 text6 CODE >49:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FAE text6 CODE >50:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FB0 text6 CODE >51:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FC0 text6 CODE >52:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FC4 text6 CODE >53:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FD2 text6 CODE >54:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FEA text6 CODE >57:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+FFE text6 CODE >60:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+1012 text6 CODE >63:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+101C text6 CODE >64:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+101E text6 CODE >62:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+102E text6 CODE >67:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+103E text6 CODE >68:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+104E text6 CODE >69:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+105E text6 CODE >70:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fltol.c
+C90 text5 CODE >10:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+C92 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+CB0 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+CE2 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+CE6 text5 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+CE6 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+CF6 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D0C text5 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D20 text5 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D24 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D28 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D2A text5 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D34 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D66 text5 CODE >29:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D68 text5 CODE >30:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D74 text5 CODE >31:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D7E text5 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+D7E text5 CODE >32:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DB0 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DB2 text5 CODE >35:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DBC text5 CODE >33:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DDA text5 CODE >37:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DE8 text5 CODE >38:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DEA text5 CODE >39:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+DEE text5 CODE >40:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+E12 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+E30 text5 CODE >42:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+E32 text5 CODE >43:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+E42 text5 CODE >44:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
+13C8 text4 CODE >11:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13C8 text4 CODE >12:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13CC text4 CODE >13:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13D0 text4 CODE >14:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13D2 text4 CODE >15:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13D4 text4 CODE >16:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13D6 text4 CODE >17:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13D8 text4 CODE >18:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13DA text4 CODE >19:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13DE text4 CODE >20:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13E0 text4 CODE >21:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13E2 text4 CODE >22:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13E4 text4 CODE >23:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13E8 text4 CODE >24:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13EA text4 CODE >25:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13EC text4 CODE >26:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13EE text4 CODE >27:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13F0 text4 CODE >28:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13F4 text4 CODE >29:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13F8 text4 CODE >30:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+13FC text4 CODE >31:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1400 text4 CODE >32:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1402 text4 CODE >33:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1404 text4 CODE >34:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1408 text4 CODE >35:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+140C text4 CODE >36:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1410 text4 CODE >37:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1414 text4 CODE >38:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1060 text3 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1060 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1064 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1072 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+107A text3 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+107E text3 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+108C text3 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1094 text3 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1098 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10A0 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10B2 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10B6 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10BA text3 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10C0 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10C2 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10D0 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10D6 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10EC text3 CODE >32:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10F4 text3 CODE >33:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10F6 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+10FC text3 CODE >36:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1102 text3 CODE >38:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1112 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+111A text3 CODE >40:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1122 text3 CODE >41:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+1124 text2 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1124 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1128 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1136 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+113E text2 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1142 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1150 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1158 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+116A text2 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+116E text2 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1172 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1178 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+117A text2 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1188 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+119E text2 CODE >27:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+11A6 text2 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+11AC text2 CODE >29:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+11B2 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+11C2 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+11CA text2 CODE >33:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+11D2 text2 CODE >34:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+1318 text1 CODE >49:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+131A text1 CODE >50:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1330 text1 CODE >51:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+135A text1 CODE >52:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+1370 text1 CODE >53:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E44 text0 CODE >74:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E44 text0 CODE >75:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E48 text0 CODE >76:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E4C text0 CODE >77:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E56 text0 CODE >78:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E66 text0 CODE >79:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E70 text0 CODE >80:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E80 text0 CODE >81:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+E8C text0 CODE >82:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+EA2 text0 CODE >83:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+EA6 text0 CODE >84:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+EAA text0 CODE >86:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+EAE text0 CODE >87:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+EB0 text0 CODE >88:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+EBE text0 CODE >89:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F02 text0 CODE >90:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F1A text0 CODE >91:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F24 text0 CODE >92:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F34 text0 CODE >93:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F3A text0 CODE >94:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F42 text0 CODE >95:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+F4A text0 CODE >96:E:\Micro_202300\20230_el53_semana6_c_motor.X\maincode4.c
+168E cinit CODE >1217:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+168E cinit CODE >1219:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+168E cinit CODE >1222:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+168E cinit CODE >1243:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+1692 cinit CODE >1244:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+1694 cinit CODE >1245:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+1694 cinit CODE >1246:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+1696 cinit CODE >1247:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+1698 cinit CODE >1248:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+169A cinit CODE >1254:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+169A cinit CODE >1256:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+169C cinit CODE >1257:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+169E cinit CODE >1259:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+16A0 cinit CODE >1260:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+16A2 cinit CODE >1261:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+16A4 cinit CODE >1262:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+16A6 cinit CODE >1263:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+16A8 cinit CODE >1264:C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 18 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_SERIAL_NEWLINE 168E 0 CODE 0 text8 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hspace_0 16F4 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hspace_1 3F 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ENVIA_CHAR@aux 10 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+_ENVIA_LCD_CMD 1540 0 CODE 0 text17 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2_POS_CURSOR 1506 0 CODE 0 text23 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_LCD_CONFIG 12B8 0 CODE 0 text13 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+_main E44 0 CODE 0 text0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+btemp 3E 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ENVIA_NIBBLE@dato E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_ENVIA_CHAR 15A8 0 CODE 0 text19 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+start AE 0 CODE 0 init C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+___flmul@aexp 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@bexp 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@prod 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@sign 28 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@temp 33 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+convierte@numero 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_LCD_Init 1640 0 CODE 0 text12 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hpowerup AE 0 CODE 0 powerup dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awmod@sign 13 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+SERIAL_ESCRIBE_MENSAJE@cadena 12 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_EUSART_RX_ISR 8 0 CODE 0 intcode dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ttemp5 3F 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ttemp6 42 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ttemp7 46 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ESCRIBE_MENSAJE@cadena 11 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+__end_of_LCD_Init 1668 0 CODE 0 text12 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+intlevel1 0 0 CODE 0 text C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+intlevel2 0 0 CODE 0 text C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+intlevel3 0 0 CODE 0 text C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+i2ESCRIBE_MENSAJE@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ESCRIBE_MENSAJE@cadena 4 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+wtemp8 3F 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awdiv@sign 19 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2_LEER_LCD 1246 0 CODE 0 text27 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_decenas 3C 0 COMRAM 1 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_configuro 1416 0 CODE 0 text4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_LCD_CONFIG 1318 0 CODE 0 text13 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ANSELB F5C 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_CURSOR_HOME 16E4 0 CODE 0 text15 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awdiv@dividend 14 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_ofi2_POS_CURSOR 1540 0 CODE 0 text23 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+_CCPR1L FBE 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_unidades 3B 0 COMRAM 1 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_configuro 13C8 0 CODE 0 text4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_TXSTA1bits FAC 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hintcodelo AE 0 CODE 0 intcodelo dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awdiv@divisor 16 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of___awdiv 1124 0 CODE 0 text3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of___awmod 11D4 0 CODE 0 text2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of___flmul C90 0 CODE 0 text7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of___fltol 1060 0 CODE 0 text6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+?_strlen E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2_ENVIA_NIBBLE 16C8 0 CODE 0 text28 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@a 20 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@b 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_ENVIA_LCD_CMD 1574 0 CODE 0 text17 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_ofi2_LEER_LCD 12B8 0 CODE 0 text27 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lintcodelo AE 0 CODE 0 intcodelo dist/default/production\20230_el53_semana6_c_motor.X.production.o
+start_initialization 168E 0 CODE 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_convierte 1372 0 CODE 0 text1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ESCRIBE_MENSAJE@tam 13 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_TRISEbits F96 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_RCREG1 FAE 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_BORRAR_LCD 16EC 0 CODE 0 text16 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ESCRIBE_MENSAJE@i 16 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_SPBRG1 FAF 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ENVIA_LCD_CMD@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ENVIA_CHAR@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_convierte 1318 0 CODE 0 text1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+LEER_LCD@aux E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+__end_of_EUSART_RX_ISR AE 0 CODE 0 intcode dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_ofi2_ENVIA_NIBBLE 16E4 0 CODE 0 text28 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2POS_CURSOR@columna 4 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_strlen 14CC 0 CODE 0 text10 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+SERIAL_ESCRIBE_MENSAJE@tam 16 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_POS_CURSOR 14CC 0 CODE 0 text11 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+___xxtofl@arg 18 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___xxtofl@exp 17 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___xxtofl@val E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul@grs 29 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hinit B2 0 CODE 0 init dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htemp 3F 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Linit AE 0 CODE 0 init dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltemp 3E 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\20230_el53_semana6_c_motor.X.production.o
+int$flags 3E 0 COMRAM 1 temp dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_BORRAR_LCD 16F4 0 CODE 0 text16 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+POS_CURSOR@fila 12 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_CURSOR_ONOFF 1610 0 CODE 0 text14 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_PR2 FBB 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__S0 16F4 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__S1 3F 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_ofi2_ENVIA_LCD_CMD 15DC 0 CODE 0 text24 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_SERIAL_ESCRIBE_MENSAJE 1372 0 CODE 0 text9 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___xxtofl C90 0 CODE 0 text5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2_ENVIA_CHAR 15DC 0 CODE 0 text26 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_POS_CURSOR 1506 0 CODE 0 text11 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\20230_el53_semana6_c_motor.X.production.o
+strlen@a 10 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+strlen@s E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ENVIA_NIBBLE 16AC 0 CODE 0 text21 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of___xxtofl E44 0 CODE 0 text5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__activetblptr 1 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awmod@counter 12 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_CURSOR_HOME 16EC 0 CODE 0 text15 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_PIE1bits F9D 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext10 1492 0 CODE 0 text10 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext11 14CC 0 CODE 0 text11 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext12 1640 0 CODE 0 text12 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext13 12B8 0 CODE 0 text13 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext14 1610 0 CODE 0 text14 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext15 16E4 0 CODE 0 text15 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext16 16EC 0 CODE 0 text16 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext17 1540 0 CODE 0 text17 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext18 1416 0 CODE 0 text18 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext19 1574 0 CODE 0 text19 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext20 11D4 0 CODE 0 text20 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext21 16AC 0 CODE 0 text21 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext23 1506 0 CODE 0 text23 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext24 15A8 0 CODE 0 text24 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext25 1454 0 CODE 0 text25 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext26 15DC 0 CODE 0 text26 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext27 1246 0 CODE 0 text27 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext28 16C8 0 CODE 0 text28 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awdiv 1060 0 CODE 0 text3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awmod 1124 0 CODE 0 text2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ENVIA_CHAR@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___flmul 866 0 CODE 0 text7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___fltol F5A 0 CODE 0 text6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ESCRIBE_MENSAJE@tam 6 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2_ENVIA_LCD_CMD 15A8 0 CODE 0 text24 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_LATDbits F8C 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_LATEbits F8D 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_CURSOR_ONOFF 1640 0 CODE 0 text14 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_RCSTA1bits FAB 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_strlen 1492 0 CODE 0 text10 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+__end_ofi2_ESCRIBE_MENSAJE 1492 0 CODE 0 text25 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+stacklo 0 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__pbssCOMRAM 37 0 COMRAM 1 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_ofi2_ENVIA_CHAR 1610 0 CODE 0 text26 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_LEER_LCD 11D4 0 CODE 0 text20 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___fltol@exp1 17 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_ENVIA_NIBBLE 16C8 0 CODE 0 text21 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+end_of_initialization 169A 0 CODE 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ENVIA_LCD_CMD@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_LEER_LCD 1246 0 CODE 0 text20 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awdiv@quotient 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+?___awdiv 14 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+?___awmod E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+?___flmul 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+?___fltol E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awmod@dividend E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__pcinit 168E 0 CODE 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_ESCRIBE_MENSAJE 1454 0 CODE 0 text18 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext0 E44 0 CODE 0 text0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext1 1318 0 CODE 0 text1 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext2 1124 0 CODE 0 text2 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext3 1060 0 CODE 0 text3 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext4 13C8 0 CODE 0 text4 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext5 C90 0 CODE 0 text5 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext6 F5A 0 CODE 0 text6 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext7 866 0 CODE 0 text7 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext8 1668 0 CODE 0 text8 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ptext9 1372 0 CODE 0 text9 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+__Lpowerup AE 0 CODE 0 powerup dist/default/production\20230_el53_semana6_c_motor.X.production.o
+?___xxtofl E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ENVIA_LCD_CMD@dato F 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___fltol@sign1 16 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+___heap_lo 0 0 ABS 0 - C:\Users\Alumnos\AppData\Local\Temp\xcAsa54.o
+SERIAL_ESCRIBE_MENSAJE@i 17 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___fltol@f1 E 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2ENVIA_NIBBLE@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_SERIAL_ESCRIBE_MENSAJE 13C8 0 CODE 0 text9 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of__initialization 169A 0 CODE 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_calculo 37 0 COMRAM 1 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___awmod@divisor 10 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2_ESCRIBE_MENSAJE 1454 0 CODE 0 text25 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+POS_CURSOR@columna 11 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2LEER_LCD@aux 1 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ENVIA_CHAR@dato F 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ESCRIBE_MENSAJE 1416 0 CODE 0 text18 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_SERIAL_NEWLINE 1668 0 CODE 0 text8 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__end_of_main F5A 0 CODE 0 text0 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_T2CON FBA 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ENVIA_CHAR 1574 0 CODE 0 text19 dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_CCP1CON FBD 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_centenas 3D 0 COMRAM 1 bssCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__initialization 168E 0 CODE 0 cinit dist/default/production\20230_el53_semana6_c_motor.X.production.o
+___xxtofl@sign 16 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+ENVIA_LCD_CMD@aux 10 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+i2POS_CURSOR@fila 5 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hsmallconst 866 0 SMALLCONST 0 smallconst dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ANSELAbits F5B 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ANSELCbits F5D 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+_ANSELEbits F5F 0 ABS 0 - dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\20230_el53_semana6_c_motor.X.production.o
+__Hintcode AE 0 CODE 0 intcode dist/default/production\20230_el53_semana6_c_motor.X.production.o
+CURSOR_ONOFF@estado 11 0 COMRAM 1 cstackCOMRAM dist/default/production\20230_el53_semana6_c_motor.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text7 0 866 866 E8E 1
+cstackCOMRAM 1 1 1 3E 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 AA 1
+smallconst 0 800 800 66 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
