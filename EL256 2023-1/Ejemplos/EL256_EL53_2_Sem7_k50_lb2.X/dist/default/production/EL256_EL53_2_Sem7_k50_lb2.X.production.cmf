@@ -1,0 +1,251 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/maincode2.o
+upcinos CODE 0 0 0 130B 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 130B-7FFF 1
+IDLOC 200000-200007 1
+SMALLCONST 130B-7FFF 1
+CODE 130B-7FFF 1
+COMRAM 0-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 130B-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/maincode2.o
+0 upcinos CODE >18:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+0 upcinos CODE >25:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+2 upcinos CODE >27:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+8 upcinos CODE >28:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+A upcinos CODE >30:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+20 upcinos CODE >32:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+22 upcinos CODE >33:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+24 upcinos CODE >34:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+26 upcinos CODE >35:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+28 upcinos CODE >36:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+2A upcinos CODE >37:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+2C upcinos CODE >38:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+2E upcinos CODE >39:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+30 upcinos CODE >40:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+32 upcinos CODE >41:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+34 upcinos CODE >42:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+36 upcinos CODE >43:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+38 upcinos CODE >44:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+3A upcinos CODE >45:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+3C upcinos CODE >46:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+3E upcinos CODE >47:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+40 upcinos CODE >48:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+42 upcinos CODE >50:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+44 upcinos CODE >51:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+46 upcinos CODE >53:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+48 upcinos CODE >54:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+4A upcinos CODE >55:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+4C upcinos CODE >57:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+4E upcinos CODE >58:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+50 upcinos CODE >61:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+52 upcinos CODE >62:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+54 upcinos CODE >63:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+56 upcinos CODE >65:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+58 upcinos CODE >66:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+5A upcinos CODE >67:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+5C upcinos CODE >68:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+5E upcinos CODE >70:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+60 upcinos CODE >71:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+62 upcinos CODE >72:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+64 upcinos CODE >73:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+66 upcinos CODE >75:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+6A upcinos CODE >76:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+6E upcinos CODE >77:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+70 upcinos CODE >80:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+72 upcinos CODE >81:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+76 upcinos CODE >82:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+7A upcinos CODE >83:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+7C upcinos CODE >84:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+80 upcinos CODE >85:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+82 upcinos CODE >86:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+84 upcinos CODE >87:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+88 upcinos CODE >88:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+8C upcinos CODE >89:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+8E upcinos CODE >90:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+92 upcinos CODE >91:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+94 upcinos CODE >92:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+96 upcinos CODE >93:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+9A upcinos CODE >94:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+9E upcinos CODE >95:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+A0 upcinos CODE >96:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+A4 upcinos CODE >97:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+A6 upcinos CODE >98:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+A8 upcinos CODE >99:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+AC upcinos CODE >100:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+B0 upcinos CODE >101:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+B2 upcinos CODE >102:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+B6 upcinos CODE >103:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+B8 upcinos CODE >104:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+BA upcinos CODE >107:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+BC upcinos CODE >108:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+BE upcinos CODE >110:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+C0 upcinos CODE >111:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+C2 upcinos CODE >112:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+C4 upcinos CODE >113:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+C6 upcinos CODE >116:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+C8 upcinos CODE >117:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+CA upcinos CODE >118:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+CC upcinos CODE >119:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+CE upcinos CODE >120:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+D0 upcinos CODE >121:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+D2 upcinos CODE >123:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+D4 upcinos CODE >124:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+D6 upcinos CODE >126:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+D8 upcinos CODE >127:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+DA upcinos CODE >128:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+DC upcinos CODE >129:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+DE upcinos CODE >130:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+E0 upcinos CODE >132:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+E2 upcinos CODE >133:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+E4 upcinos CODE >136:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+E8 upcinos CODE >137:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+EA upcinos CODE >138:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+EC upcinos CODE >139:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+EE upcinos CODE >140:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+F0 upcinos CODE >141:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+F2 upcinos CODE >142:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+F6 upcinos CODE >143:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+F8 upcinos CODE >144:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+FA upcinos CODE >145:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+FC upcinos CODE >146:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+FE upcinos CODE >147:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+100 upcinos CODE >148:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+104 upcinos CODE >149:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+106 upcinos CODE >150:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+108 upcinos CODE >151:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+10A upcinos CODE >152:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+10C upcinos CODE >153:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+10E upcinos CODE >154:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+1200 upcinos CODE >19:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+120B upcinos CODE >21:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+1300 upcinos CODE >22:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+130B upcinos CODE >24:E:\20231_Micro_KLG\EL256_EL53_2_Sem7_k50_lb2.X\maincode2.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 130B 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000E 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Lupcinos 0 0 ABS 0 upcinos -
+isa$xinst 0 0 ABS 0 - build/default/production/maincode2.o
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000E 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hupcinos 0 0 ABS 0 upcinos -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/maincode2.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
