@@ -4,6 +4,8 @@
 #define _XTAL_FREQ 4000000UL    //frecuencia de trabajo del microcontrolador
 
 unsigned char e_acentuado[]={0x02,0x04,0x0E,0x11,0x1F,0x10,0x0E,0x00};
+unsigned char yuca = 0;
+unsigned char centena, decena, unidad;
 
 void configuro(void){
     //configuracion del INTSOSC
@@ -33,17 +35,36 @@ void LCD_Init(void){
 }
 
 void pantallazo(void){
-    POS_CURSOR(1,2);
-    ESCRIBE_MENSAJE("Hola Mundo!",11);
-    POS_CURSOR(2,0);
+    POS_CURSOR(1,0);
     ESCRIBE_MENSAJE("Con fe aprobar",14);
     ENVIA_CHAR(0);
     ENVIA_CHAR('!');
+}
+
+void convierte(unsigned char numero){
+    centena = numero / 100;
+    decena = (numero % 100) / 10;
+    unidad = numero % 10;
 }
 
 void main(void) {
     configuro();
     LCD_Init();
     pantallazo();
-    while(1);
+    while(1){
+        convierte(yuca);
+        POS_CURSOR(2,0);
+        ESCRIBE_MENSAJE("Yuca:",5)
+        ENVIA_CHAR(centena+0x30);
+        ENVIA_CHAR(decena+0x30);
+        ENVIA_CHAR(unidad+0x30);
+        __delay_ms(100);
+        if(yuca == 100){
+            yuca = 0;
+        }
+        else{
+            yuca++;
+        }
+    }
+        
 }
