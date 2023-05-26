@@ -6,6 +6,7 @@
 unsigned char centena, decena, unidad;
 
 void configuro(void){
+    OSCCON = 0x52;
     TRISD = 0x00;
     ANSELD = 0x00;
     TRISAbits.TRISA0 = 1;       //RA0 como entrada
@@ -60,11 +61,6 @@ void main(void) {
         convierte(ADRESH);
         POS_CURSOR(2,0);
         ESCRIBE_MENSAJE2("ADC:");        
-        ENVIA_CHAR(centena+0x30);
-        ENVIA_CHAR(decena+0x30);
-        ENVIA_CHAR(unidad+0x30);
-        ESCRIBE_MENSAJE2(" PREV:");        
-        convierte(ADPREVH);
         ENVIA_CHAR(centena+0x30);
         ENVIA_CHAR(decena+0x30);
         ENVIA_CHAR(unidad+0x30);
