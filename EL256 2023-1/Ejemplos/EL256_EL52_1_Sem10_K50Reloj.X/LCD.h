@@ -19,3 +19,7 @@ void BLINK_CURSOR(unsigned char val);
 void GENERACARACTER(const unsigned char *vector,unsigned char pos);
 void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
 void ESCRIBE_MENSAJE2(const char *cadena);
+void CURSOR_SHIFTLEFT(void);
+void CURSOR_SHIFTRIGHT(void);
+void DISPLAY_SHIFTLEFT(void);
+void DISPLAY_SHIFTRIGHT(void);
