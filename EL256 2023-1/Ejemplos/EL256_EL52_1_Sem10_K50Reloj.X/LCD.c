@@ -33,6 +33,28 @@ void CURSOR_HOME(void)
 	ENVIA_LCD_CMD(0x02);
 }
 
+void CURSOR_SHIFTLEFT(void)
+{
+	ENVIA_LCD_CMD(0x10);
+}
+
+void CURSOR_SHIFTRIGHT(void)
+{
+	ENVIA_LCD_CMD(0x14);
+}
+
+void DISPLAY_SHIFLEFT(void)
+{
+	ENVIA_LCD_CMD(0x18);
+}
+
+void DISPLAY_SHIFRIGHT(void)
+{
+	ENVIA_LCD_CMD(0x1C);
+}
+
+
+
 void CURSOR_ONOFF(unsigned char estado)
 {	
 	if(estado == ON)	ENVIA_LCD_CMD(0x0E);
