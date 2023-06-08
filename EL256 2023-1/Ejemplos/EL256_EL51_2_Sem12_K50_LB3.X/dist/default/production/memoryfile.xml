@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\EL256_EL51_2_Sem12_K50_LB3.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>1780</used>
+      <free>30988</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>28</used>
+      <free>2020</free>
+    </memory>
+  </executable>
+</project>
