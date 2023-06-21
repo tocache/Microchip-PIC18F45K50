@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\EL256_EL51_1_Sem14_k50_pcf8574.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>374</used>
+      <free>32394</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>18</used>
+      <free>2030</free>
+    </memory>
+  </executable>
+</project>
