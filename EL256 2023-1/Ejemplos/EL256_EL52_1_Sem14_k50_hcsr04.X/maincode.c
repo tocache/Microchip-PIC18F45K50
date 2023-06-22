@@ -19,6 +19,8 @@ void configuro(void){
     ANSELD = 0x00;
     TRISBbits.TRISB0 = 0;
     ANSELBbits.ANSB0 = 0;
+    TRISCbits.RC2 = 1;
+    ANSELCbits.ANSC2 = 0;
     LCD_INIT();
 }
 
@@ -64,7 +66,7 @@ void main(void) {
                 ENVIA_CHAR((distancia%100)/10+'0');
                 ENVIA_CHAR((distancia%100)%10+'0');
                 ESCRIBE_MENSAJE2(" cm");
-                __delay_ms(20);
+                __delay_ms(200);
                 estado = DISPARO;
                 break;
         }
